@@ -1,0 +1,147 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: rgb(95, 87, 78);
+    --stone-900: hsl(24, 5%, 18%);
+
+    --brown: hsl(14, 45%, 36%);
+
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--stone-100);
+}
+
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+h2{
+    color: var(--brown);
+}
+
+p, li{
+    font-family: "Outfit", sans-serif;
+    color: var(--stone-600);
+}
+
+section{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.bottom-border{
+        border-bottom: 2px solid rgba(95, 87, 78, 0.1);
+}
+
+.color-brown{
+    color: var(--brown);
+}
+
+.container{
+    width: 50%;
+    min-width: 470px;
+    margin: 50px auto;
+    padding: 35px;
+    padding-bottom: 0;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.container img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
+.preparation-details{
+    background-color: var(--rose-50);
+    padding: 5px 20px 10px;
+    border-radius: 10px;
+}
+
+.preparation-details h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--rose-800);
+    margin-bottom: 10px;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+li p.list-style{
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nutrition{
+    margin-bottom: 10px;
+}
+
+.nutrition p {
+    margin: 10px;
+}
+
+.nutrition-table-item{
+    display: flex;
+}
+
+.nutrition-table-item p{
+    width: 50%;
+    margin-left: 25px;
+}
+
+@media (max-width: 450px){
+
+    .container{
+        width: 100%;
+        min-width: auto;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .container img{
+        position: absolute;
+        width: 100%;
+        border-radius: 0;
+        top: 0;
+        left: 0;
+    }
+
+    header{
+        margin-top: 180px;
+    }
+}
+
